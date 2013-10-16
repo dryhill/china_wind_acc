@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>acc_qg</class>
+ <widget class="QDialog" name="acc_qg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>233</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>风作用顶点最大加速度计算</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>131</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="lb_us">
+      <property name="text">
+       <string>体型系数u_s</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_ur">
+      <property name="text">
+       <string>重现期调整系数u_r</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_w0">
+      <property name="text">
+       <string>基本风压w_0(kn/m^2)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_xi">
+      <property name="text">
+       <string>脉动增大系数xi</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_nu">
+      <property name="text">
+       <string>脉动影响系数nu</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_h">
+      <property name="text">
+       <string>建筑物高度H</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_b">
+      <property name="text">
+       <string>建筑物迎风宽度B</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_l">
+      <property name="text">
+       <string>建筑物顺风向长度L</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_m">
+      <property name="text">
+       <string>建筑物总质量(t)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_ccd">
+      <property name="text">
+       <string>地面粗糙度类别</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_hfznb">
+      <property name="text">
+       <string>横风向临界阻尼比值</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_hft">
+      <property name="text">
+       <string>横风向第一自振周期(s)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>0</y>
+     <width>81</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="le_us"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_ur"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_w0"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_xi"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_nu"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_h"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_b"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_l"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_m"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_ccd">
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_hfznb"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_hft"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="le_sf">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>370</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 255, 0);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_sf">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>顺风向顶点最大加速度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnyes">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>430</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_hf">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>横风向顶点最大加速度</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_hf">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>400</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 255, 0);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>计算过程见qgacc.txt</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
