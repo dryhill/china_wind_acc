@@ -4,24 +4,22 @@
 Module implementing Acc_qg.
 """
 import os
-from PyQt4.QtCore import pyqtSlot
 from PyQt4.QtGui import QDialog
+from PyQt4.QtCore import pyqtSignature
 
 from Ui_wac_qg import Ui_acc_qg
-
 
 class Acc_qg(QDialog, Ui_acc_qg):
     """
     Class documentation goes here.
     """
-    def __init__(self, parent=None):
+    def __init__(self, parent = None):
         """
         Constructor
-        
-        @param parent reference to the parent widget (QWidget)
         """
-        super().__init__(parent)
+        QDialog.__init__(self, parent)
         self.setupUi(self)
+
         self.le_us.textChanged[str].connect(self.leuschanged)
         self.le_ur.textChanged[str].connect(self.leurchanged)
         self.le_w0.textChanged[str].connect(self.lew0changed)
@@ -36,7 +34,17 @@ class Acc_qg(QDialog, Ui_acc_qg):
         
         self.btnyes.clicked.connect(self.calc)
 
-
+        self.us=0
+        self.ur=0
+        self.w0=0
+        self.xi=0
+        self.nu=0
+        self.h=0
+        self.b=0
+        self.l=0
+        self.m=1
+        self.hfznb=0
+        self.hft=0
     def leuschanged(self, text):        
         self.us=text
     def leurchanged(self, text):        
@@ -158,4 +166,5 @@ if __name__ == "__main__":
     ui=Acc_qg()
     ui.show()
     sys.exit(app.exec_())
+
 

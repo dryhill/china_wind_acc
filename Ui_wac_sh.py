@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'M:\pro\windacc\china_wind_acc\wac_sh.ui'
+# Form implementation generated from reading ui file 'E:\PRO\china_wind_acc_python2.7_eric4\wac_sh.ui'
 #
-# Created: Wed Oct 16 11:29:50 2013
-#      by: PyQt4 UI code generator 4.9
+# Created: Thu Oct 17 00:07:18 2013
+#      by: PyQt4 UI code generator 4.10.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -12,15 +12,24 @@ from PyQt4 import QtCore, QtGui
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    _fromUtf8 = lambda s: s
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_acc_sh(object):
     def setupUi(self, acc_sh):
         acc_sh.setObjectName(_fromUtf8("acc_sh"))
-        acc_sh.resize(437, 459)
+        acc_sh.resize(438, 519)
         acc_sh.setStyleSheet(_fromUtf8(""))
         self.verticalLayoutWidget = QtGui.QWidget(acc_sh)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 0, 170, 361))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 0, 164, 411))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setMargin(0)
@@ -28,9 +37,12 @@ class Ui_acc_sh(object):
         self.lb_us = QtGui.QLabel(self.verticalLayoutWidget)
         self.lb_us.setObjectName(_fromUtf8("lb_us"))
         self.verticalLayout.addWidget(self.lb_us)
-        self.lb_w0 = QtGui.QLabel(self.verticalLayoutWidget)
-        self.lb_w0.setObjectName(_fromUtf8("lb_w0"))
-        self.verticalLayout.addWidget(self.lb_w0)
+        self.lb_hft_3 = QtGui.QLabel(self.verticalLayoutWidget)
+        self.lb_hft_3.setObjectName(_fromUtf8("lb_hft_3"))
+        self.verticalLayout.addWidget(self.lb_hft_3)
+        self.lb_w = QtGui.QLabel(self.verticalLayoutWidget)
+        self.lb_w.setObjectName(_fromUtf8("lb_w"))
+        self.verticalLayout.addWidget(self.lb_w)
         self.lb_xi = QtGui.QLabel(self.verticalLayoutWidget)
         self.lb_xi.setObjectName(_fromUtf8("lb_xi"))
         self.verticalLayout.addWidget(self.lb_xi)
@@ -58,8 +70,11 @@ class Ui_acc_sh(object):
         self.lb_hft = QtGui.QLabel(self.verticalLayoutWidget)
         self.lb_hft.setObjectName(_fromUtf8("lb_hft"))
         self.verticalLayout.addWidget(self.lb_hft)
+        self.lb_hft_2 = QtGui.QLabel(self.verticalLayoutWidget)
+        self.lb_hft_2.setObjectName(_fromUtf8("lb_hft_2"))
+        self.verticalLayout.addWidget(self.lb_hft_2)
         self.verticalLayoutWidget_2 = QtGui.QWidget(acc_sh)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(180, 0, 81, 371))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(180, 0, 81, 421))
         self.verticalLayoutWidget_2.setObjectName(_fromUtf8("verticalLayoutWidget_2"))
         self.verticalLayout_2 = QtGui.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setMargin(0)
@@ -70,6 +85,9 @@ class Ui_acc_sh(object):
         self.le_w0 = QtGui.QLineEdit(self.verticalLayoutWidget_2)
         self.le_w0.setObjectName(_fromUtf8("le_w0"))
         self.verticalLayout_2.addWidget(self.le_w0)
+        self.le_w = QtGui.QLineEdit(self.verticalLayoutWidget_2)
+        self.le_w.setObjectName(_fromUtf8("le_w"))
+        self.verticalLayout_2.addWidget(self.le_w)
         self.le_xi = QtGui.QLineEdit(self.verticalLayoutWidget_2)
         self.le_xi.setObjectName(_fromUtf8("le_xi"))
         self.verticalLayout_2.addWidget(self.le_xi)
@@ -101,35 +119,35 @@ class Ui_acc_sh(object):
         self.le_hft = QtGui.QLineEdit(self.verticalLayoutWidget_2)
         self.le_hft.setObjectName(_fromUtf8("le_hft"))
         self.verticalLayout_2.addWidget(self.le_hft)
+        self.le_beta = QtGui.QLineEdit(self.verticalLayoutWidget_2)
+        self.le_beta.setObjectName(_fromUtf8("le_beta"))
+        self.verticalLayout_2.addWidget(self.le_beta)
         self.le_sf = QtGui.QLineEdit(acc_sh)
-        self.le_sf.setGeometry(QtCore.QRect(140, 370, 81, 20))
+        self.le_sf.setGeometry(QtCore.QRect(140, 430, 81, 20))
         self.le_sf.setStyleSheet(_fromUtf8("background-color: rgb(0, 255, 0);"))
         self.le_sf.setObjectName(_fromUtf8("le_sf"))
         self.lb_sf = QtGui.QLabel(acc_sh)
-        self.lb_sf.setGeometry(QtCore.QRect(10, 370, 121, 20))
+        self.lb_sf.setGeometry(QtCore.QRect(10, 430, 121, 20))
         self.lb_sf.setObjectName(_fromUtf8("lb_sf"))
         self.btnyes = QtGui.QPushButton(acc_sh)
-        self.btnyes.setGeometry(QtCore.QRect(140, 430, 81, 21))
+        self.btnyes.setGeometry(QtCore.QRect(140, 490, 81, 21))
         self.btnyes.setObjectName(_fromUtf8("btnyes"))
         self.lb_hf = QtGui.QLabel(acc_sh)
-        self.lb_hf.setGeometry(QtCore.QRect(10, 400, 121, 20))
+        self.lb_hf.setGeometry(QtCore.QRect(10, 460, 121, 20))
         self.lb_hf.setObjectName(_fromUtf8("lb_hf"))
         self.le_hf = QtGui.QLineEdit(acc_sh)
-        self.le_hf.setGeometry(QtCore.QRect(140, 400, 81, 20))
+        self.le_hf.setGeometry(QtCore.QRect(140, 460, 81, 20))
         self.le_hf.setStyleSheet(_fromUtf8("background-color: rgb(0, 255, 0);"))
         self.le_hf.setObjectName(_fromUtf8("le_hf"))
         self.label = QtGui.QLabel(acc_sh)
-        self.label.setGeometry(QtCore.QRect(10, 430, 111, 21))
+        self.label.setGeometry(QtCore.QRect(10, 490, 111, 21))
         self.label.setObjectName(_fromUtf8("label"))
         self.pte_h = QtGui.QPlainTextEdit(acc_sh)
-        self.pte_h.setGeometry(QtCore.QRect(290, 50, 51, 321))
+        self.pte_h.setGeometry(QtCore.QRect(290, 50, 51, 461))
         self.pte_h.setObjectName(_fromUtf8("pte_h"))
         self.pte_m = QtGui.QPlainTextEdit(acc_sh)
-        self.pte_m.setGeometry(QtCore.QRect(370, 50, 51, 321))
+        self.pte_m.setGeometry(QtCore.QRect(370, 50, 51, 461))
         self.pte_m.setObjectName(_fromUtf8("pte_m"))
-        self.label_2 = QtGui.QLabel(acc_sh)
-        self.label_2.setGeometry(QtCore.QRect(280, 10, 71, 16))
-        self.label_2.setObjectName(_fromUtf8("label_2"))
         self.label_3 = QtGui.QLabel(acc_sh)
         self.label_3.setGeometry(QtCore.QRect(370, 30, 71, 16))
         self.label_3.setObjectName(_fromUtf8("label_3"))
@@ -141,29 +159,30 @@ class Ui_acc_sh(object):
         QtCore.QMetaObject.connectSlotsByName(acc_sh)
 
     def retranslateUi(self, acc_sh):
-        acc_sh.setWindowTitle(QtGui.QApplication.translate("acc_sh", "风作用顶点最大加速度计算", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_us.setText(QtGui.QApplication.translate("acc_sh", "体型系数u_s", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_w0.setText(QtGui.QApplication.translate("acc_sh", "10年重现期风压w(kn/m^2)", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_xi.setText(QtGui.QApplication.translate("acc_sh", "脉动增大系数xi", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_nu.setText(QtGui.QApplication.translate("acc_sh", "脉动影响系数nu", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_h.setText(QtGui.QApplication.translate("acc_sh", "建筑物高度H", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_b.setText(QtGui.QApplication.translate("acc_sh", "建筑物迎风宽度B", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_l.setText(QtGui.QApplication.translate("acc_sh", "建筑物顺风向长度L", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_m.setText(QtGui.QApplication.translate("acc_sh", "建筑物总质量(t)", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_ccd.setText(QtGui.QApplication.translate("acc_sh", "地面粗糙度类别", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_hfznb.setText(QtGui.QApplication.translate("acc_sh", "横风向一阶结构阻尼比zata_s1", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_hft.setText(QtGui.QApplication.translate("acc_sh", "横风向第一自振周期T_1(s)", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(0, QtGui.QApplication.translate("acc_sh", "A", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(1, QtGui.QApplication.translate("acc_sh", "B", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(2, QtGui.QApplication.translate("acc_sh", "C", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(3, QtGui.QApplication.translate("acc_sh", "D", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_sf.setText(QtGui.QApplication.translate("acc_sh", "顺风向顶点最大加速度", None, QtGui.QApplication.UnicodeUTF8))
-        self.btnyes.setText(QtGui.QApplication.translate("acc_sh", "确定", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_hf.setText(QtGui.QApplication.translate("acc_sh", "横风向顶点最大加速度", None, QtGui.QApplication.UnicodeUTF8))
-        self.label.setText(QtGui.QApplication.translate("acc_sh", "计算过程见shacc.txt", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_2.setText(QtGui.QApplication.translate("acc_sh", "横向一阶振型", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_3.setText(QtGui.QApplication.translate("acc_sh", "各层质量(t)", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_4.setText(QtGui.QApplication.translate("acc_sh", "各层相对振幅", None, QtGui.QApplication.UnicodeUTF8))
+        acc_sh.setWindowTitle(_translate("acc_sh", "风作用顶点最大加速度计算", None))
+        self.lb_us.setText(_translate("acc_sh", "体型系数u_s", None))
+        self.lb_hft_3.setText(_translate("acc_sh", "基本风压w0", None))
+        self.lb_w.setText(_translate("acc_sh", "10年重现期风压w(kn/m^2)", None))
+        self.lb_xi.setText(_translate("acc_sh", "脉动增大系数xi", None))
+        self.lb_nu.setText(_translate("acc_sh", "脉动影响系数nu", None))
+        self.lb_h.setText(_translate("acc_sh", "建筑物高度H", None))
+        self.lb_b.setText(_translate("acc_sh", "建筑物迎风宽度B", None))
+        self.lb_l.setText(_translate("acc_sh", "建筑物顺风向长度L", None))
+        self.lb_m.setText(_translate("acc_sh", "建筑物总质量(t)", None))
+        self.lb_ccd.setText(_translate("acc_sh", "地面粗糙度类别", None))
+        self.lb_hfznb.setText(_translate("acc_sh", "横风向一阶结构阻尼比zata_s1", None))
+        self.lb_hft.setText(_translate("acc_sh", "横风向第一自振周期T_1(s)", None))
+        self.lb_hft_2.setText(_translate("acc_sh", "横风向一阶振型指数beta", None))
+        self.cb_ccd.setItemText(0, _translate("acc_sh", "A", None))
+        self.cb_ccd.setItemText(1, _translate("acc_sh", "B", None))
+        self.cb_ccd.setItemText(2, _translate("acc_sh", "C", None))
+        self.cb_ccd.setItemText(3, _translate("acc_sh", "D", None))
+        self.lb_sf.setText(_translate("acc_sh", "顺风向顶点最大加速度", None))
+        self.btnyes.setText(_translate("acc_sh", "确定", None))
+        self.lb_hf.setText(_translate("acc_sh", "横风向顶点最大加速度", None))
+        self.label.setText(_translate("acc_sh", "计算过程见shacc.txt", None))
+        self.label_3.setText(_translate("acc_sh", "各层质量(t)", None))
+        self.label_4.setText(_translate("acc_sh", "各层标高(m)", None))
 
 
 if __name__ == "__main__":

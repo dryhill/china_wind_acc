@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'M:\pro\windacc\china_wind_acc\select_methon.ui'
+# Form implementation generated from reading ui file 'E:\PRO\china_wind_acc_python2.7_eric4\select_methon.ui'
 #
-# Created: Wed Oct 16 11:48:33 2013
-#      by: PyQt4 UI code generator 4.9
+# Created: Wed Oct 16 20:29:52 2013
+#      by: PyQt4 UI code generator 4.10.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -12,7 +12,16 @@ from PyQt4 import QtCore, QtGui
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    _fromUtf8 = lambda s: s
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -30,9 +39,9 @@ class Ui_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QtGui.QApplication.translate("Dialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
-        self.pb_qg.setText(QtGui.QApplication.translate("Dialog", "依据全国规范", None, QtGui.QApplication.UnicodeUTF8))
-        self.pb_sh.setText(QtGui.QApplication.translate("Dialog", "依据上海高层钢结构规范", None, QtGui.QApplication.UnicodeUTF8))
+        Dialog.setWindowTitle(_translate("Dialog", "Dialog", None))
+        self.pb_qg.setText(_translate("Dialog", "依据全国规范", None))
+        self.pb_sh.setText(_translate("Dialog", "依据上海高层钢结构规范", None))
 
 
 if __name__ == "__main__":

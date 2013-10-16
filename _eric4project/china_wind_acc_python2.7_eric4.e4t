@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-4.2.dtd">
+<!-- eric4 tasks file for project china_wind_acc_python2.7_eric4 -->
+<!-- Saved: 2013-10-17, 00:25:32 -->
+<Tasks version="4.2">
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2013-10-16, 20:43:21</Created>
+    <Resource>
+      <Filename>select_methon.py</Filename>
+      <Linenumber>41</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

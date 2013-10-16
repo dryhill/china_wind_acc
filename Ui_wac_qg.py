@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'M:\pro\windacc\china_wind_acc\wac_qg.ui'
+# Form implementation generated from reading ui file 'E:\PRO\china_wind_acc_python2.7_eric4\wac_qg.ui'
 #
-# Created: Wed Oct 16 11:38:52 2013
-#      by: PyQt4 UI code generator 4.9
+# Created: Wed Oct 16 20:29:52 2013
+#      by: PyQt4 UI code generator 4.10.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -12,7 +12,16 @@ from PyQt4 import QtCore, QtGui
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    _fromUtf8 = lambda s: s
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_acc_qg(object):
     def setupUi(self, acc_qg):
@@ -132,27 +141,27 @@ class Ui_acc_qg(object):
         QtCore.QMetaObject.connectSlotsByName(acc_qg)
 
     def retranslateUi(self, acc_qg):
-        acc_qg.setWindowTitle(QtGui.QApplication.translate("acc_qg", "风作用顶点最大加速度计算", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_us.setText(QtGui.QApplication.translate("acc_qg", "体型系数u_s", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_ur.setText(QtGui.QApplication.translate("acc_qg", "重现期调整系数u_r", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_w0.setText(QtGui.QApplication.translate("acc_qg", "基本风压w_0(kn/m^2)", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_xi.setText(QtGui.QApplication.translate("acc_qg", "脉动增大系数xi", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_nu.setText(QtGui.QApplication.translate("acc_qg", "脉动影响系数nu", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_h.setText(QtGui.QApplication.translate("acc_qg", "建筑物高度H", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_b.setText(QtGui.QApplication.translate("acc_qg", "建筑物迎风宽度B", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_l.setText(QtGui.QApplication.translate("acc_qg", "建筑物顺风向长度L", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_m.setText(QtGui.QApplication.translate("acc_qg", "建筑物总质量(t)", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_ccd.setText(QtGui.QApplication.translate("acc_qg", "地面粗糙度类别", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_hfznb.setText(QtGui.QApplication.translate("acc_qg", "横风向临界阻尼比值", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_hft.setText(QtGui.QApplication.translate("acc_qg", "横风向第一自振周期(s)", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(0, QtGui.QApplication.translate("acc_qg", "A", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(1, QtGui.QApplication.translate("acc_qg", "B", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(2, QtGui.QApplication.translate("acc_qg", "C", None, QtGui.QApplication.UnicodeUTF8))
-        self.cb_ccd.setItemText(3, QtGui.QApplication.translate("acc_qg", "D", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_sf.setText(QtGui.QApplication.translate("acc_qg", "顺风向顶点最大加速度", None, QtGui.QApplication.UnicodeUTF8))
-        self.btnyes.setText(QtGui.QApplication.translate("acc_qg", "确定", None, QtGui.QApplication.UnicodeUTF8))
-        self.lb_hf.setText(QtGui.QApplication.translate("acc_qg", "横风向顶点最大加速度", None, QtGui.QApplication.UnicodeUTF8))
-        self.label.setText(QtGui.QApplication.translate("acc_qg", "计算过程见qgacc.txt", None, QtGui.QApplication.UnicodeUTF8))
+        acc_qg.setWindowTitle(_translate("acc_qg", "风作用顶点最大加速度计算", None))
+        self.lb_us.setText(_translate("acc_qg", "体型系数u_s", None))
+        self.lb_ur.setText(_translate("acc_qg", "重现期调整系数u_r", None))
+        self.lb_w0.setText(_translate("acc_qg", "基本风压w_0(kn/m^2)", None))
+        self.lb_xi.setText(_translate("acc_qg", "脉动增大系数xi", None))
+        self.lb_nu.setText(_translate("acc_qg", "脉动影响系数nu", None))
+        self.lb_h.setText(_translate("acc_qg", "建筑物高度H", None))
+        self.lb_b.setText(_translate("acc_qg", "建筑物迎风宽度B", None))
+        self.lb_l.setText(_translate("acc_qg", "建筑物顺风向长度L", None))
+        self.lb_m.setText(_translate("acc_qg", "建筑物总质量(t)", None))
+        self.lb_ccd.setText(_translate("acc_qg", "地面粗糙度类别", None))
+        self.lb_hfznb.setText(_translate("acc_qg", "横风向临界阻尼比值", None))
+        self.lb_hft.setText(_translate("acc_qg", "横风向第一自振周期(s)", None))
+        self.cb_ccd.setItemText(0, _translate("acc_qg", "A", None))
+        self.cb_ccd.setItemText(1, _translate("acc_qg", "B", None))
+        self.cb_ccd.setItemText(2, _translate("acc_qg", "C", None))
+        self.cb_ccd.setItemText(3, _translate("acc_qg", "D", None))
+        self.lb_sf.setText(_translate("acc_qg", "顺风向顶点最大加速度", None))
+        self.btnyes.setText(_translate("acc_qg", "确定", None))
+        self.lb_hf.setText(_translate("acc_qg", "横风向顶点最大加速度", None))
+        self.label.setText(_translate("acc_qg", "计算过程见qgacc.txt", None))
 
 
 if __name__ == "__main__":

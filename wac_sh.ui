@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>437</width>
-    <height>459</height>
+    <width>438</width>
+    <height>519</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,8 +21,8 @@
     <rect>
      <x>10</x>
      <y>0</y>
-     <width>170</width>
-     <height>361</height>
+     <width>164</width>
+     <height>411</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -34,7 +34,14 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="lb_w0">
+     <widget class="QLabel" name="lb_hft_3">
+      <property name="text">
+       <string>基本风压w0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_w">
       <property name="text">
        <string>10年重现期风压w(kn/m^2)</string>
       </property>
@@ -103,6 +110,13 @@
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QLabel" name="lb_hft_2">
+      <property name="text">
+       <string>横风向一阶振型指数beta</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget_2">
@@ -111,7 +125,7 @@
      <x>180</x>
      <y>0</y>
      <width>81</width>
-     <height>371</height>
+     <height>421</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -120,6 +134,9 @@
     </item>
     <item>
      <widget class="QLineEdit" name="le_w0"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_w"/>
     </item>
     <item>
      <widget class="QLineEdit" name="le_xi"/>
@@ -169,13 +186,16 @@
     <item>
      <widget class="QLineEdit" name="le_hft"/>
     </item>
+    <item>
+     <widget class="QLineEdit" name="le_beta"/>
+    </item>
    </layout>
   </widget>
   <widget class="QLineEdit" name="le_sf">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>370</y>
+     <y>430</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -188,7 +208,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>370</y>
+     <y>430</y>
      <width>121</width>
      <height>20</height>
     </rect>
@@ -201,7 +221,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>430</y>
+     <y>490</y>
      <width>81</width>
      <height>21</height>
     </rect>
@@ -214,7 +234,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>400</y>
+     <y>460</y>
      <width>121</width>
      <height>20</height>
     </rect>
@@ -227,7 +247,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>400</y>
+     <y>460</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -240,7 +260,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>430</y>
+     <y>490</y>
      <width>111</width>
      <height>21</height>
     </rect>
@@ -255,7 +275,7 @@
      <x>290</x>
      <y>50</y>
      <width>51</width>
-     <height>321</height>
+     <height>461</height>
     </rect>
    </property>
   </widget>
@@ -265,21 +285,8 @@
      <x>370</x>
      <y>50</y>
      <width>51</width>
-     <height>321</height>
+     <height>461</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>10</y>
-     <width>71</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>横向一阶振型</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -305,7 +312,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>各层相对振幅</string>
+    <string>各层标高(m)</string>
    </property>
   </widget>
  </widget>
