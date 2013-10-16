@@ -34,7 +34,7 @@ class select_method(QDialog, Ui_Dialog):
         """
 #        QtGui.QMessageBox.about(self,"测试","点击弹出窗口成功")
         ui1=Acc_qg()
-        ui1.show()
+        ui1.exec()
 
     
 
@@ -50,3 +50,4 @@ if __name__ == "__main__":
     ui=select_method()
     ui.show()
     sys.exit(app.exec_())
+
