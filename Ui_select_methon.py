@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'E:\PRO\china_wind_acc_python2.7_eric4\select_methon.ui'
+# Form implementation generated from reading ui file 'E:\PRO\china_wind_acc\select_methon.ui'
 #
-# Created: Wed Oct 16 20:29:52 2013
+# Created: Thu Oct 17 01:55:17 2013
 #      by: PyQt4 UI code generator 4.10.2
 #
 # WARNING! All changes made in this file will be lost!

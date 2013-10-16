@@ -1,0 +1,122 @@
+\documentclass{ctexart}
+%\usepackage{xeCJK}
+\usepackage{amsmath}
+%\setCJKmainfont{Adobe Fangsong Std}
+\begin{document}
+\section{高层民用建筑钢结构技术规程 JGJ 99-98}
+5.5.1节三条：\\
+高层建筑钢结构在风荷载作用下的顺风向和横风向顶点最大加速度，应满足下列关系式的要求：
+\begin{align}
+  \text{公寓建筑}\quad &	a_w(\text{或}a_{tr})\le 0.20 \mathrm{m/s^2} \\
+  \text{公共建筑}\quad &	a_w(\text{或}a_{tr})\le 0.28 \mathrm{m/s^2}
+  \label{}
+\end{align}
+\subsection{顺风向顶点最大加速度}
+\begin{equation}
+  a_w=\xi \nu \frac{\mu_s \mu_r w_0 A}{m_{\mathrm{tot}}}
+  \label{}
+\end{equation}
+式中：\begin{align}
+  a_w		&-\text{顺风向顶点最大加速度；}(\mathrm{m/s^2})  &&&&&&&& \nonumber\\
+  \mu_s	&-\text{风荷载体型系数；}				&&&&&&&& \nonumber\\
+  \mu_r	&-\text{重现期调整系数，取重现期为10年时的系数0.83；}&&&&&&&& \nonumber\\
+  w_0		&-\text{基本风压}(\mathrm{kN/m^2}) \text{，按现行国家标准《建筑结构荷载规范》(GBJ9)}&&&&&&&& \nonumber\\
+  		& \hspace{1em}\text{全国基本风压分布图的规定采用；}&&&&&&&& \nonumber \\
+  \xi\text{、}\nu	 &-\mbox{分别为脉动增大系数和脉动影响系数，按现行国家标准《建筑结构荷载规范》(GBJ9)}	&&&&&&&& \nonumber \\
+ 		 & \hspace{1em}\text{的规定采用；}&&&&&&&&\nonumber\\
+  A		&-\text{建筑物总迎风面积}\mathrm{m^2}&&&&&&&& \nonumber \\
+  m_{\mathrm{tot}}	&-\text{建筑物总质量}(\mathrm{t})\text{。}\nonumber
+  \label{}
+\end{align}
+
+\subsection{横风向顶点最大加速度}
+\begin{align}
+  a_{\mathrm{tr}}	&=\frac{b_r}{T_t^2}\cdot \frac{\sqrt{BL}}{\gamma_\mathrm{B}\sqrt{\zeta_{\mathrm{t,cr}}}} \\
+  b_r			&=2.05 \times 10^{-4} \left[ \frac{v_{\mathrm{n,m}}T_{\mathrm{t}}}{\sqrt{BL}} \right]^{3.3} \quad (\mathrm{kN/m^3}) \nonumber
+  \label{}
+\end{align}
+式中：
+\begin{align}
+  a_{\mathrm{tr}} &-\text{横风向顶点最大加速度}(\mathrm{m/s^2}) \text{；}&&&&&&&& \nonumber \\
+  v_{\mathrm{n,m}}&-\text{建筑物顶点平均风速}(\mathrm{m/s^2}),v_{\mathrm{n,m}}=40 \sqrt{\mu_s \mu_z w_0} \text{；} &&&&&&&& \nonumber \\
+  \mu_z		&-\text{风压高度变化系数；} &&&&&&&& \nonumber \\
+  \gamma_\mathrm{B}	&-\text{建筑物所受的平均重力}(\mathrm{kN/m^3})\text{；} &&&&&&&& \nonumber \\
+  \zeta_{\mathrm{t,cr}}	&-\text{建筑物横风向的临界阻尼比值；(条文说明中建议取0.01~0.02)} &&&&&&&& \nonumber \\
+  T_\mathrm{t}		&-\text{建筑物横风向的第一自振周期(s)；} &&&&&&&& \nonumber \\
+  B\text{、}L		&-\text{分别为建筑物平面的宽度和长度(m)。} &&&&&&&& \nonumber
+  \label{}
+\end{align}
+
+\section{上海市《高层建筑钢结构设计规程》DG/TJ08-32-2008}
+第6.2.10条：当高层建筑周边无干扰建筑时
+
+\subsection{顺风向最大加速度}
+\begin{equation}
+  a_{\mathrm{along}}=\xi \nu \frac{\mu_s w A}{m}
+  \label{}
+\end{equation}
+式中
+\begin{align}
+  a_\mathrm{along}	&-\text{顺风向顶点最大加速度}\mathrm{m/s^2}\text{；}	&&&&&&&& \nonumber \\
+  \xi				&-\text{脉动增大系数，按表6.2.6-1确定；}	&&&&&&&& \nonumber \\
+  \nu				&-\text{脉动影响系数，按表6.2.6-2确定；}	&&&&&&&& \nonumber \\
+  \mu_s			&-\text{风荷载体型系数，按表6.2.5-1确定；}	&&&&&&&& \nonumber \\
+  w				&-\text{10年重现期的风压}(\mathrm{m/s^2})\text{，取0.40}\mathrm{kN/m^2}\text{；}	 &&&&&&&& \nonumber \\
+  A				&-\text{高层建筑的总迎风面积}\mathrm{(m^2)}	&&&&&&&& \nonumber \\
+  m				&-\text{高层建筑总质量(t)} \nonumber
+  \label{}
+\end{align}
+
+\subsection{横风向最大加速度}
+\begin{equation}
+  a_\mathrm{across}=g_\mathrm{R} \frac{\mathrm{H}}{\mathrm{M}_1} B w_\mathrm{H} \cdot \sqrt{
+  \frac{\pi \theta_m S_{\mathrm{F}}(f_1)}
+  {4(\zeta_{s1}+\zeta_{a1})}
+  }
+  \label{}
+\end{equation}
+式中
+\begin{align}
+  a_{\mathrm{across}}	&-\text{横风向顶点最大加速度}\mathrm{m/s^2}	&&&&&&&& \nonumber
+  \label{}
+\end{align}
+
+其他参数同附录B，但在计算时，基本风压改用按10年重现期取的风压，其值为0.40 $\mathrm{m/s^2}$。
+\begin{align}
+  g_{\mathrm{R}}	&-\text{共振峰值因子，}	&&&&&&&& \nonumber \\
+			& g_{\mathrm{R}} \approx \sqrt{2 \ln(600f_1)}+\frac{0.5772}{\sqrt{2 \ln(600f_1)}}	 &&&&&&&& \nonumber \\
+  f_1			&-\text{高层建筑横风向一阶频率；}	&&&&&&&& \nonumber \\
+  M_1			&-\text{一阶广义质量，}	&&&&&&&& \nonumber \\
+  			& M_1=\int_0^H m(z) \left( z/H \right)^{2\beta} \, \mathrm{d}z	&&&&&&&& \nonumber \\
+  m(z)		&-\text{高层建筑沿高度的单位长度质量(t/m)}	&&&&&&&& \nonumber \\
+  \beta		&-\text{横风向一阶振型指数，可由结构动力学计算得到；}	&&&&&&&& \nonumber \\
+  \theta_m		&-\text{横风向一阶广义风荷载功率谱振型修正系数，}	&&&&&&&& \nonumber \\
+  &	\text{当}\beta \ge 1\text{时，} 	 \quad \theta_m	=\frac{4\alpha+3}{4\alpha+2\beta+1} &&&&&&&&&\nonumber\\
+  &	\text{当}\beta   < 1\text{时，} 	 \quad \theta_m	 =\left(\frac{2\alpha+2}{2\alpha+\beta+1}\right) &&&&&&&&&\nonumber\\
+  S_F(f_1)		&-\text{横风向一阶广义无量纲风荷载功率谱}		&&&&&&&& \nonumber \\
+  & S_F(f_1)=\frac{S_p \beta_k (n_1/f_p)^\gamma}{ \{1-(n_1/f_p)^2\}^2+\beta_k (n_1/f_p)^2 }	 &&&&&&&& \nonumber \\
+  &f_p=10^{-5}(191-9.48\alpha_w+1.28\alpha_{hr}+\alpha_{hr}\alpha_w)(68-21 \alpha_{db}+3\alpha^3_{db}) 	&&&&&&&& \nonumber \\
+  &S_p=(0.1 \alpha_w^{-0.4}-0.0004 e^{\alpha_w})(0.84\alpha_{hr}-2.12-0.05 \alpha_{hr}^2)(0.422+\alpha_{db}^{-1}-0.08 \alpha_{db}^{-2})	&&&&&&&& \nonumber \\
+  & \beta_k=(1+0.00473e^{1.7 \alpha_w})(0.065+e^{1.26-0.63 \alpha_{hr}})e^{1,7-3.44/\alpha_{db}} 	 &&&&&&&& \nonumber \\
+  & \gamma=(-0.8+0.06\alpha_w+0.0007 e^{\alpha_w})(-\alpha_{hr}^{0.34}+0.00006 e^{\alpha_{hr}})(0.414\alpha_{db}+1.67 \alpha_{db}^{-1.23})	&&&&&&&& \nonumber
+  \end{align}
+\begin{align}
+  n_1 & -\text{折减频率，}	&&&&&&&& \nonumber \\
+  	& n_1=f_1B/U_H 	&&&&&&&& \nonumber \\
+  U_H &-\text{高层建筑的顶部风速}		&&&&&&&& \nonumber \\
+      & U_H=\sqrt{1600w_H}	&&&&&&&& \nonumber \\
+\alpha	&-\text{平均风速剖面指数；A,B,C,D四类地貌的}\alpha_w\text{分别取}1.0,2.0,3.0,4.0,	 &&&&&&&& \nonumber \\
+\alpha_w	&-\text{风场系数；A,B,C,D四类地貌的}\alpha_w\text{分别取}0.12,0.16,0.22,0.3,	 &&&&&&&& \nonumber \\			
+\alpha_{hr} &-\text{高层建筑的等效高宽比，}\alpha_{hr}=H/\sqrt{BD}\text{，适用范围为4.0--9.0；}	 &&&&&&&& \nonumber \\
+\alpha_{db} &-\text{高层建筑的厚宽比，}\alpha_{db}=D/B\text{，适用范围为0.3--3.0；}	&&&&&&&& \nonumber \\
+\zeta_{a1}	&-\text{高层建筑横风向一阶气动阻尼比}	&&&&&&&& \nonumber \\
+\zeta_{a1}=	&=\frac{0.0025[1-(U/9.8)^2](U/9.8)+0.000125(U/9.8)^2 }{[1-(U/9.8)^2]+0.0291(U/9.8)^2}	&&&&&&&& \nonumber \\
+U	&-\text{高层建筑的顶部折减风速，}	&&&&&&&& \nonumber \\
+	& U=U_H/(f_1 B) 	&&&&&&&& \nonumber \\
+	\zeta_{s1}	&-\text{高层建筑横风向一阶结构阻尼比}\nonumber\\
+	w_h	&-\text{高层建筑顶部风压}\nonumber\\
+	&w_h=\mu_{ZH}w_0\nonumber\\
+	\mu_h	&-\text{高层建筑顶部H处的风压高度系数}\nonumber\\
+	w_0	&-\text{基本风压}\nonumber
+\end{align}
+\end{document}

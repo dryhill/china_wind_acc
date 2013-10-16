@@ -3,6 +3,7 @@
 """
 Module implementing select_method.
 """
+import atexit
 import sys
 from PyQt4.QtGui import QDialog
 from PyQt4.QtCore import pyqtSignature
@@ -11,8 +12,9 @@ from PyQt4 import QtGui
 from Ui_select_methon import Ui_Dialog
 from Ui_wac_qg import Ui_acc_qg
 from wac_qg import Acc_qg
+from wac_sh import Acc_sh
 
-class select_method(QDialog, Ui_Dialog):
+class Select_method(QDialog, Ui_Dialog):
     """
     Class documentation goes here.
     """
@@ -38,11 +40,11 @@ class select_method(QDialog, Ui_Dialog):
         """
         Slot documentation goes here.
         """
-        # TODO: not implemented yet
-        QtGui.QMessageBox.about(self,"测试","点击弹出窗口成功")
+        ui1=Acc_sh()
+        ui1.exec_()
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)    
-    ui=select_method()
+    ui=Select_method()
     ui.show()
     sys.exit(app.exec_())
